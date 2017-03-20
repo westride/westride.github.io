@@ -1,28 +1,24 @@
 
 <!DOCTYPE html>
 	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
+		{% include head.html %}
 		<body>
 			<nav>
 	    		<ul>
 		        	<li><a href="/about">About</a></li>
-	                         <li><a href="_posts">Posts</a></li>
+	                         <li><a href="/blog">Posts</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
-			
+
 			{{ content }}
-			
+
 			</div><!-- /.container -->
 			<footer>
-	    		
+
 	        		<a href="mailto:2toastwho@gmail.com">email</a>
-	        		 &copy; Copyrights 2017 
-				
+	        		 &copy; Copyrights 2017
+
 			</footer>
 		</body>
 	</html>
